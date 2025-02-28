@@ -46,4 +46,4 @@ echo "✅ Git & GitHub setup completed! 🚀"
 
 #Copy the SSH key it prints and add it to GitHub under Settings → SSH and GPG keys.
 
-#ssh -T git@github.com
+#ssh -T git@github.com.
