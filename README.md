@@ -1,9 +1,21 @@
-Fedora after installation process!
+# Setting up Fedora 42
 
-Download the repo using git clone SSH
+After installation of Fedora 42, Clone this repo & run these scripts to save some time.
 
-#Allowing permission
-sudo chmod +x
+## Installation
 
-#Run the script
-sudo ./script-name
+Setup Git in the machine. Always use SSH key to faster sync.
+
+```bash
+git clone <SSH-LINK>
+```
+
+## Usage
+
+```bash
+chmod +x script-name.sh
+
+./script-name.sh
+```
+
+Note : Use Super-user (sudo) if permission denied.
