@@ -24,15 +24,14 @@ else
 fi
 
 # Step 3: Install Nerd Font (MesloLGS)
-echo "🔤 Installing Meslo Nerd Font..."
-mkdir -p ~/.local/share/fonts
-cd ~/.local/share/fonts
-curl -fLo "MesloLGS NF Regular.ttf" https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/Meslo/L/Regular/MesloLGS%20NF%20Regular.ttf
-curl -fLo "MesloLGS NF Bold.ttf" https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/Meslo/L/Bold/MesloLGS%20NF%20Bold.ttf
-curl -fLo "MesloLGS NF Italic.ttf" https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/Meslo/L/Italic/MesloLGS%20NF%20Italic.ttf
-curl -fLo "MesloLGS NF Bold Italic.ttf" https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/Meslo/L/Bold-Italic/MesloLGS%20NF%20Bold%20Italic.ttf
-fc-cache -fv
-cd -
+#echo "🔤 Installing Meslo Nerd Font..."
+#mkdir -p ~/.local/share/fonts
+#cd ~/.local/share/fonts
+#curl -fLo Meslo.zip https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/Meslo.zip
+#unzip -o Meslo.zip
+#rm Meslo.zip
+#fc-cache -fv
+#cd -
 
 # Step 4: Install useful Zsh plugins
 echo "🔌 Installing zsh-autosuggestions and zsh-syntax-highlighting..."
