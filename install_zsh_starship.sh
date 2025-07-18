@@ -23,15 +23,22 @@ else
   echo "✅ Starship already installed."
 fi
 
-# Step 3: Install Nerd Font (MesloLGS)
-#echo "🔤 Installing Meslo Nerd Font..."
-#mkdir -p ~/.local/share/fonts
-#cd ~/.local/share/fonts
-#curl -fLo Meslo.zip https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/Meslo.zip
-#unzip -o Meslo.zip
-#rm Meslo.zip
-#fc-cache -fv
-#cd -
+# Step 3: Download and extract Meslo Nerd Font from official Nerd Fonts release
+echo "🔤 Downloading Meslo Nerd Font (patched)..."
+
+mkdir -p ~/.local/share/fonts
+cd ~/.local/share/fonts
+
+# Download the zip archive (tested working as of July 2025)
+curl -LO https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/Meslo.zip
+
+# Extract only .ttf files
+unzip -o Meslo.zip '*.ttf'
+rm Meslo.zip
+
+# Update font cache
+fc-cache -fv
+cd -
 
 # Step 4: Install useful Zsh plugins
 echo "🔌 Installing zsh-autosuggestions and zsh-syntax-highlighting..."
