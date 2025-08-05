@@ -41,6 +41,18 @@ sudo dnf install -y vlc
 echo "💬 Installing Telegram Desktop (Flatpak)..."
 flatpak install -y flathub org.telegram.desktop
 
+# Install Foliate (Flatpak)
+echo "💬 Installing Foliate (Flatpak)..."
+flatpak install flathub com.github.johnfactotum.Foliate
+
+#Install Blanket (Flatpak)
+echo "💬 Installing Blanket (Flatpak)..."
+flatpak install flathub com.rafaelmardojai.Blanket
+
+#Install Quick Lookup (Flatpak)
+echo "💬 Installing Blanket (Flatpak)..."
+flatpak install flathub com.github.johnfactotum.QuickLookup
+
 # Optional Tools (Uncomment if needed)
 # echo "🔧 Installing Gnome Tweaks..."
 # sudo dnf install -y gnome-tweaks
